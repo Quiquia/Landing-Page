@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/body.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&family=Lobster&family=Raleway:ital,wght@0,400;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-----------Logo header--------->
+      <header id="header">
+        <div class="img-logo">
+          <img
+            id="header-img"
+            src="https://pbs.twimg.com/media/Er9As56XMAQuXDy.jpg"
+            alt="logo"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li class="nav">
+              <a class="nav-link" href="#service">Nuestros Servicios</a>
+            </li>
+            <li class="nav">
+              <a class="nav-link" href="#video">Experiencia</a>
+            </li>
+            <li class="nav">
+              <a class="nav-link" href="#block-price">Precio</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <!-------------Formulario---------->
+      <main>
+        <section class="form-container">
+          <h2>Bienvenido a tu Ozono Spa​</h2>
+          <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            class="form"
+          >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Escribe tu correo"
+              class="inputForm"
+              required
+            />
+            <input type="submit" id="submit" class="inputForm submit" />
+          </form>
+        </section>
+        <section id="service" class="service-content">
+          <div class="service-grid">
+            <div class="service-grid__icon">
+              <i class="fa-solid fa-bath icon"></i>
+            </div>
+            <div class="service-grid__text">
+              <h2 class="content__title">Servicio de Baños</h2>
+              <p class="content__descripcion">
+                En BID sabemos lo importante que es tu engreído de cuatro patas
+                para ti y tu familia, es por esto que tenemos baños ozonizados
+                con los mejores productos y profesionales para que tu mascota
+                tenga un pelaje increíble y una mejor salud para su piel.
+              </p>
+            </div>
+          </div>
+          <div class="service-grid">
+            <div class="service-grid__icon">
+              <i class="fa-solid fa-scissors icon"></i>
+            </div>
+            <div class="service-grid__text">
+              <h2 class="content__title">Servicio de Grooming</h2>
+              <p class="content__descripcion">
+                Se le denomina Grooming al conjunto de técnicas de peluquería
+                canina y felina que permite mantener en buen estado la imagen y
+                la salud corporal de los perros y gatos.
+              </p>
+            </div>
+          </div>
+          <div class="service-grid">
+            <div class="service-grid__icon">
+              <i class="fa-solid fa-cat icon"></i>
+            </div>
+            <div class="service-grid__text">
+              <h2 class="content__title">Servicio de Carding</h2>
+              <p class="content__descripcion">
+                El Carding es una técnica especial y natural realizada por un
+                groomer que consiste en quitar el pelo muerto y dejar solo el
+                manto primario del engreído. Esta técnica ayuda a que el pelaje
+                esté más saludable y evita la caída del pelo en las mascotas que
+                lo poseen en gran cantidad.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-------------Video-------------------------->
+        <section class="iframe">
+          <iframe
+            id="video"
+            class="iframe"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/tkzwXX53qQ8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <section id="block-price" class="block-services">
+          <div class="card-service">
+            <h2 class="card-service__title">Servicio de Baños</h2>
+            <h3 class="card-service__price">$100</h3>
+            <ol>
+              <li>Baños con ozonoterapia</li>
+              <li>Baños con ozonoterapia para perros</li>
+              <li>Servicio de baño para gatos</li>
+            </ol>
+            <button class="card-service__send">Seleccionar</button>
+          </div>
+          <div class="card-service">
+            <h2 class="card-service__title">Servicio de Grooming</h2>
+            <h3 class="card-service__price">$400</h3>
+            <ol class="card-service__list">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="card-service__send">Seleccionar</button>
+          </div>
+          <div class="card-service">
+            <h2 class="card-service__title">Servicio de Carding</h2>
+            <h3 class="card-service__price">$200</h3>
+            <ol class="card-service__list">
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+              <li>Lorem ipsum.</li>
+            </ol>
+            <button class="card-service__send">Seleccionar</button>
+          </div>
+        </section>
+      </main>
+      <!--------------Footer-------------->
+      <footer class="footer">
+        <div class="footer-list">
+          <ul>
+            <li class="foot-link"><a href="#">Privacidad</a></li>
+            <li class="foot-link"><a href="#">Terminos</a></li>
+            <li class="foot-link"><a href="#"> Contactos</a></li>
+          </ul>
+          <span> &copy Copyright 2021, BNI</span>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

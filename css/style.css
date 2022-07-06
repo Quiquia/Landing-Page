@@ -1,0 +1,34 @@
+:root {
+  --color-nav: #919797;
+  --color-submit: #ffd700;
+  --color-icon: #cc0000;
+  --background-head: #f0ffff;
+  --background-card: #afeeee;
+  --background-container: #7fffd4;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: var(--color);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--background-container);
+}
